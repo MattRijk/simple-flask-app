@@ -1,0 +1,62 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<section class="flex-search-box">
+<h1 id="title">Look Up Cities</h1>
+<form id="search-box" action="">
+  <input type="text" name="world-search" value="">
+  <input type="submit" value="Search">
+</form>
+
+</section>
+   
+<section class="flex-section">
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>ISO CODES</th>
+    <th>District</th>
+    <th>Population</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+    <td>785456</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+    <td>85421</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+    <td>96535</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+    <td>4654545</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+    <td>7865464</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+    <td>5468787</td>
+  </tr>
+</table>
+</section>
+
+{% endblock %}

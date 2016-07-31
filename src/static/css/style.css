@@ -1,0 +1,165 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+
+.flex-header {
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-header a {
+	color: #000;
+	text-decoration: none;
+	
+}
+.flex-nav {
+    border: 1px solid #333; 
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	background-color: #000;
+	border-bottom: 5px solid #add5fd;
+	
+}
+
+.flex-nav ul {
+	width: 100%;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex-nav ul li { margin: 0 10px; list-style: none;}
+
+.flex-nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.flex-nav ul li a:HOVER {
+	color: #add5fd;
+}
+
+
+/* Search Box Section*/
+.flex-search-box {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#title {
+	font-size: 1.3em;
+}
+
+#search-box {
+	margin: 10px 10px;
+}
+
+.flex-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+
+h1, h2, h3, h4, p, a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+}
+
+a {
+	font-size: .9em;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+.about {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.about-image {
+	margin: 0px 10px 10px 0px;	
+}
+
+.about-image h3 {
+	font-size: .9em;
+}
+
+.about-text  {
+	font-size: .9em;
+	margin-top: 0px;
+}
+
+
+@media only screen and (max-width: 515px) {
+	
+
+	.flex-header {
+	display: flex;
+	flex-direction: column;
+	}
+	.flex-nav { 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	border: none;
+	
+	}
+	.flex-nav ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		
+	}
+	.flex-nav ul li {
+ 		border: 1px solid #333;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2px auto;
+		padding: 10px 0px;
+		background-color: #000;
+		width: 100%;
+	}
+	
+	.flex-section tr {
+		font-size: .72em;
+	}
+	.flex-search-box {
+    display: flex;
+  	flex-direction: column;
+	}
+	
+}
+
+	
